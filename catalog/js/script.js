@@ -103,7 +103,7 @@ $(function () {
   AOS.init();
 
   $(window).on("load", function () {
-    $(".loader").fadeOut(3000);
-    $("#preloder").delay(3000).fadeOut("slow");
+    $(".loader").fadeOut();
+    $("#preloder").delay().fadeOut("slow");
   });
 });
