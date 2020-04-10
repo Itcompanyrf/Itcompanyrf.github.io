@@ -13,10 +13,18 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div id="preloder">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__top">
@@ -25,28 +33,53 @@
           </a>
           <nav class="menu">
             <ul>
-              <li><a data-target="anchor" href="#about">About us</a></li>
-              <li><a data-target="anchor" href="#scrollto">Catalog</a></li>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="3000">
+                <a data-target="anchor" href="#about">About us</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="3000">
+                <a data-target="anchor" href="#scrollto">Catalog</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="3000">
                 <a data-target="anchor" href="#personal">Personal Area</a>
               </li>
-              <li><a data-target="anchor" href="#new">New</a></li>
-              <li><a data-target="anchor" href="#personal">Feedback</a></li>
-              <li><a data-target="anchor" href="#personal">Contacts</a></li>
+              <li data-aos="fade-right" data-aos-duration="3000">
+                <a data-target="anchor" href="#new">New</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="3000">
+                <a data-target="anchor" href="#personal">Feedback</a>
+              </li>
+              <li data-aos="fade-right" data-aos-duration="3000">
+                <a data-target="anchor" href="#personal">Contacts</a>
+              </li>
             </ul>
           </nav>
           <div class="header__icon">
-            <a href="#" class="icon-one">
+            <a
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              href="#"
+              class="icon-one"
+            >
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="icon-one">
+            <a
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              href="#"
+              class="icon-one"
+            >
               <i class="fab fa-vk"></i>
             </a>
-            <a href="#" class="icon-one">
+            <a
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              href="#"
+              class="icon-one"
+            >
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
-          <div class="hamburger">
+          <div data-aos="fade" data-aos-duration="2000" class="hamburger">
             <div class="burger-line-first"></div>
             <div class="burger-line-second"></div>
             <div class="burger-line-third"></div>
@@ -67,16 +100,70 @@
               </a>
             </div>
           </div>
-          <img class="quote-one" src="img/left-bottom.png" alt="quote" />
-          <img class="quote-two" src="img/right-bottom.png" alt="quote" />
-          <img class="quote-three" src="img/left-top.png" alt="quote" />
-          <img class="quote-four" src="img/right-header.png" alt="quote" />
+          <img
+            class="quote-one"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            src="img/left-bottom.png"
+            alt="quote"
+          />
+          <img
+            class="quote-two"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            src="img/right-bottom.png"
+            alt="quote"
+          />
+          <img
+            class="quote-three"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            src="img/left-top.png"
+            alt="quote"
+          />
+          <img
+            class="quote-four"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            src="img/right-header.png"
+            alt="quote"
+          />
 
-          <img src="img/quote-3.png" alt="quote" class="quote-3" />
-          <img src="img/quote-4.png" alt="quote" class="quote-4" />
-          <img src="img/quote-5.png" alt="quote" class="quote-5" />
-          <img src="img/quote-6.png" alt="quote" class="quote-6" />
-          <img src="img/quote-7.png" alt="quote" class="quote-7" />
+          <img
+            src="img/quote-3.png"
+            alt="quote"
+            class="quote-3"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          />
+          <img
+            src="img/quote-4.png"
+            alt="quote"
+            class="quote-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="img/quote-5.png"
+            alt="quote"
+            class="quote-5"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          />
+          <img
+            src="img/quote-6.png"
+            alt="quote"
+            class="quote-6"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          />
+          <img
+            src="img/quote-7.png"
+            alt="quote"
+            class="quote-7"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          />
         </div>
       </div>
       <div class="scroll">
@@ -117,7 +204,11 @@
           <h2>Catalog</h2>
         </div>
         <div class="catalog__slider">
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 My brother yo...
@@ -133,7 +224,11 @@
               <span class="price">$ 20.90</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 Mom you best
@@ -149,7 +244,11 @@
               <span class="price">$ 19.86</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 The story of ...
@@ -165,7 +264,11 @@
               <span class="price">$ 20.90</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 Selfie
@@ -181,7 +284,11 @@
               <span class="price">$ 29.99</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 My brother yo...
@@ -197,7 +304,11 @@
               <span class="price">$ 20.90</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 Mom you best
@@ -213,7 +324,11 @@
               <span class="price">$ 19.86</span>
             </div>
           </div>
-          <div class="catalog__slider-one">
+          <div
+            class="catalog__slider-one"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
             <div class="slider__title">
               <h4>
                 The story of ...
@@ -243,11 +358,19 @@
         <div class="about__image">
           <div class="about__section">
             <div class="about__content">
-              <div class="about__logo">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                class="about__logo"
+              >
                 <img src="img/about__book.png" alt="" class="about__book" />
                 <h2 class="about__title">About</h2>
               </div>
-              <div class="about__text">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                class="about__text"
+              >
                 <p>
                   This online store is designed for quick, convenient and<br />
                   easy search of any literature. Every day we update the<br />
@@ -257,7 +380,11 @@
                   in the shortest possible time.
                 </p>
               </div>
-              <div class="text-two">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                class="text-two"
+              >
                 <p>
                   Sign up and be always up to date with the news!
                 </p>
@@ -275,16 +402,24 @@
 
     <section id="new" class="new">
       <div class="container">
-        <div class="new__title">
+        <div data-aos="fade-down" data-aos-duration="2000" class="new__title">
           <h2>
             New
           </h2>
         </div>
         <div class="new__slider">
-          <div class="new__slider_item">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            class="new__slider_item"
+          >
             <div class="item__content">
               <div class="item__content_left">
-                <div class="item__icons">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  class="item__icons"
+                >
                   <span>$ 28.95</span>
                   <div class="new-icons">
                     <div class="wrap__element">
@@ -297,7 +432,11 @@
                   <img src="img/new__book-one.png" alt="book" />
                 </div>
               </div>
-              <div class="item__content_right">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                class="item__content_right"
+              >
                 <h4>Chemistry</h4>
                 <span class="item__author">
                   by Bernard Sablonnieres
@@ -319,10 +458,18 @@
             </div>
           </div>
 
-          <div class="new__slider_item">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="new__slider_item"
+          >
             <div class="item__content">
               <div class="item__content_left">
-                <div class="item__icons">
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  class="item__icons"
+                >
                   <span>$ 22.20</span>
                   <div class="wrap__element">
                     <i class="fas fa-cart-plus"></i>
@@ -333,7 +480,11 @@
                   <img src="img/new__book-two.png" alt="book" />
                 </div>
               </div>
-              <div class="item__content_right">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                class="item__content_right"
+              >
                 <h4>Labyrinths</h4>
                 <span class="item__author">
                   by Gentaro Kagawa
@@ -436,15 +587,43 @@
     <section class="subscription">
       <div class="container">
         <div class="tarif">
-          <div class="tarif__title">
+          <div data-aos="zoom-in" data-aos-duration="2000" class="tarif__title">
             <h2>Subscription</h2>
           </div>
-          <img class="tarif_quote_one" src="img/left-bottom.png" alt="quote" />
-          <img class="tarif_quote_two" src="img/left-top.png" alt="quote" />
-          <img class="tarif_quote_four" src="img/quote-6.png" alt="quote" />
-          <img class="tarif_quote_five" src="img/quote-7.png" alt="quote" />
+          <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="tarif_quote_one"
+            src="img/left-bottom.png"
+            alt="quote"
+          />
+          <img
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            class="tarif_quote_two"
+            src="img/left-top.png"
+            alt="quote"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="tarif_quote_four"
+            src="img/quote-6.png"
+            alt="quote"
+          />
+          <img
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            class="tarif_quote_five"
+            src="img/quote-7.png"
+            alt="quote"
+          />
           <div class="tarif__content">
-            <div class="tarif__item">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              class="tarif__item"
+            >
               <h4>Free</h4>
               <p>
                 You can pay for books without<br />
@@ -462,7 +641,11 @@
                 </a>
               </div>
             </div>
-            <div class="tarif__item">
+            <div
+              data-aos="fade-down"
+              data-aos-duration="2000"
+              class="tarif__item"
+            >
               <h4>$ 5</h4>
               <p>
                 - per month. Here for you will act as a<br />
@@ -479,7 +662,11 @@
                 </a>
               </div>
             </div>
-            <div class="tarif__item">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              class="tarif__item"
+            >
               <h4>$ 15</h4>
               <p>
                 - every month. And the whole package<br />
@@ -503,14 +690,26 @@
     <section id="personal" class="developer">
       <div class="container">
         <div class="developer__content">
-          <div class="developer__phone development">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="developer__phone development"
+          >
             <i class="fa fa-phone" aria-hidden="true"></i>
             <span class="tel">1 212 335-56-78</span>
           </div>
-          <div class="developer_name development">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            class="developer_name development"
+          >
             <a href="#">yagubtsevivan1@yandex.ru</a>
           </div>
-          <div class="developer_rights development">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            class="developer_rights development"
+          >
             <p>All rights reserved © 2016</p>
           </div>
         </div>
@@ -520,25 +719,45 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer_block">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            class="footer_block"
+          >
             <a class="block__title" href="#">Shop</a>
             <a href="#" class="block__link">And about us</a>
           </div>
-          <div class="footer_block">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            class="footer_block"
+          >
             <a class="block__title payment" href="#"
               >SHIPPING AND <span>PAYMENT</span></a
             >
             <a href="#" class="block__link">And pickup</a>
           </div>
-          <div class="footer_block">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            class="footer_block"
+          >
             <a class="block__title" href="#">GIFT CERTIFICATES</a>
             <a href="#" class="block__link">And system of discounts</a>
           </div>
-          <div class="footer_block">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            class="footer_block"
+          >
             <a class="block__title" href="#">REGISTER AFFILIATE</a>
             <a href="#" class="block__link">And private partner account</a>
           </div>
-          <div class="footer_block">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            class="footer_block"
+          >
             <a class="block__title" href="#">PERSONAL AREA</a>
             <a href="#" class="block__link">And history of orders</a>
           </div>
@@ -547,6 +766,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
