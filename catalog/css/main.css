@@ -614,6 +614,7 @@ header {
   margin-left: 40px;
   margin-bottom: 100px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .about__image {
@@ -910,6 +911,7 @@ i {
   background-color: #e94544;
   padding-bottom: 150px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .tarif_quote_one {
