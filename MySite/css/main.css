@@ -1,0 +1,591 @@
+@font-face {
+  font-family: "Hack";
+  src: url("../fonts/Hack-Regular.eot");
+  src: local("Hack Regular"), local("Hack-Regular"),
+    url("../fonts/Hack-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Hack-Regular.woff2") format("woff2"),
+    url("../fonts/Hack-Regular.woff") format("woff"),
+    url("../fonts/Hack-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gost";
+  src: url("../fonts/ofont.ru_GOST\ type\ A.ttf");
+  src: local("ofont.ru_GOST"), local("ofont.ru_GOST"),
+    url("../fonts/ofont.ru_GOST\ type\ A.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #171717;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Hack";
+  position: relative;
+}
+
+.header__top {
+  padding-top: 30px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu li a {
+  text-transform: uppercase;
+  font-size: 26px;
+  position: relative;
+
+  transition: all 0.1s;
+}
+
+.menu li a:hover {
+  color: #a50c3e;
+  font-weight: 600;
+}
+
+.menu__link.active {
+  font-weight: 600;
+  color: #a50c3e;
+}
+
+.menu li:not(.last_link) {
+  padding-right: 70px;
+}
+
+.header__content {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__content h1 {
+  font-family: "Gost";
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 150px;
+  font-size: 56px;
+  position: relative;
+}
+
+.header__content h1::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 130px;
+  background-color: #fff;
+  left: 50%;
+  top: 35%;
+}
+
+.header__content p {
+  font-size: 35px;
+  color: #fff;
+}
+
+.header__content-name {
+  color: #a50c3e;
+}
+
+.header__arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__add-one {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #a50c3e;
+}
+
+.header__add-two {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #a50c3e;
+}
+
+.header__add-three {
+  position: absolute;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.6;
+  bottom: 10%;
+  left: 20%;
+  color: #a50c3e;
+}
+
+.skills {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.skills__title {
+  margin-bottom: 100px;
+}
+
+.skills__title h2 {
+  font-family: "Gost";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #707070;
+}
+
+.skills__title span {
+  padding-right: 120px;
+  color: #a50c3e;
+  position: relative;
+}
+
+.skills__title span::after {
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+}
+
+.skills__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url(../img/grid.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+}
+
+.skills__inner-item {
+  width: 110px;
+  height: 450px;
+  background-color: #a50c3e;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.skills__item-one {
+  position: relative;
+}
+
+.skills__item-one::before {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "100%";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+}
+
+.skills__item-one::after {
+  content: "HTML";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills__item-two {
+  height: 350px;
+  position: relative;
+}
+
+.skills__item-two::before {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "80%";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+}
+
+.skills__item-two::after {
+  content: "CSS";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills__item-three {
+  height: 280px;
+  position: relative;
+}
+.skills__item-three::before {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "65%";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+}
+
+.skills__item-three::after {
+  content: "JS";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills__item-four {
+  height: 370px;
+  position: relative;
+}
+.skills__item-four::before {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "90%";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+}
+
+.skills__item-four::after {
+  content: "GULP";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skills__item-five {
+  position: relative;
+}
+.skills__item-five::before {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "100%";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+}
+
+.skills__item-five::after {
+  content: "SASS";
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Hack";
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfolio {
+  background-image: url(../img/polygons.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.portfolio__title {
+  text-align: end;
+  margin-bottom: 100px;
+}
+
+.portfolio__title h2 {
+  font-family: "Gost";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #707070;
+}
+
+.portfolio__title span {
+  color: #a50c3e;
+  position: relative;
+  padding-left: 120px;
+}
+
+.portfolio__title span::before {
+  content: "";
+  left: 0;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  background-color: #707070;
+  position: absolute;
+}
+
+.portfolio__item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.img-one {
+  position: relative;
+}
+
+.img-one-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 266px;
+  background-color: #000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: linear 0.3s;
+}
+
+.img-one-text h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "Gost";
+  opacity: 1;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+.img-one:hover .img-one-text {
+  visibility: visible;
+  opacity: .8;
+  transition-delay: 0s;
+  
+}
+
+.img-col-two {
+  margin-top: 40px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid #2B2B2B;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.number {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Hack";
+  transition: .5s;
+}
+
+.number:hover {
+ color: #a50c3e;
+}
+
+.mail {
+  font-size: 24px;
+  color: #fff;
+  font-family: "Hack";
+  transition: .5s;
+}
+
+.mail:hover {
+  color: #a50c3e;
+ }
+
+ 
+.rights {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #B9B9B9;
+  font-family: "Hack";
+  opacity: 0.3;
+}
+
+.hamburger {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  z-index: 3;
+  cursor: pointer;
+  display: none;
+}
+
+.burger-line-first {
+  width: 19px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.burger-line-second {
+  width: 19px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.burger-line-third {
+  width: 19px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.header__menu {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.container-menu {
+  position: relative;
+}
+
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5%;
+  cursor: pointer;
+  right: 0;
+  z-index: 5;
+}
+.close-btn::after,
+.close-btn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: #e94544;
+  transform-origin: left;
+}
+
+.close-btn::after {
+  transform: rotate(45deg);
+}
+.close-btn::before {
+  transform: rotate(-45deg);
+  bottom: 18px;
+}
+
+.menu__list {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu__list a {
+  font-size: 38px;
+  line-height: 70px;
+  font-weight: 700;
+  padding: 30px 0 14px;
+  border-bottom: 3px solid #a50c3e;
+  display: inline-block;
+  min-width: 368px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.menu__list a:hover {
+  border-color: #fff;
+  color: #a50c3e;
+  transform: scale(1.2);
+  margin-left: 37px;
+}
+
+.header__menu.active {
+  left: 0;
+  z-index: 10;
+}
