@@ -11,9 +11,10 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -29,13 +30,28 @@
             <div class="menu__list">
               <ul>
                 <li>
-                  <a class="menu__link menu__link-one" data-target="anchor" href="#gallery"
+                  <a
+                    class="menu__link menu__link-one"
+                    data-target="anchor"
+                    href="#gallery"
                     >GALLERY</a
                   >
                 </li>
-                <li><a class="menu__link  menu__link-two" data-target="anchor" href="#skills">SKILLS</a></li>
                 <li>
-                  <a class="menu__link menu__link-three" data-target="anchor" href="#contacts">CONTACTS</a>
+                  <a
+                    class="menu__link menu__link-two"
+                    data-target="anchor"
+                    href="#skills"
+                    >SKILLS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu__link menu__link-three"
+                    data-target="anchor"
+                    href="#contacts"
+                    >CONTACTS</a
+                  >
                 </li>
               </ul>
             </div>
@@ -166,10 +182,10 @@
     </header>
     <section id="gallery" class="gallery">
       <div class="container">
-        <div class="gallery__title">
+        <div class="wow fadeInRight slow gallery__title">
           <h2>Gallery</h2>
         </div>
-        <div class="gallery__slider-big">
+        <div class="wow fadeInLeft gallery__slider-big">
           <img src="img/Photo-one.jpg" alt="" />
           <img src="img/Photo-two.jpg" alt="" />
           <img src="img/Photo-three.jpg" alt="" />
@@ -192,25 +208,25 @@
           <img src="img/Photo-twentyone.jpg" alt="" />
         </div>
         <div class="gallery__slider-small">
-          <img src="img/Photo-one.jpg" alt="" />
-          <img src="img/Photo-two.jpg" alt="" />
+          <img  src="img/Photo-one.jpg" alt="" />
+          <img  src="img/Photo-two.jpg" alt="" />
           <img src="img/Photo-three.jpg" alt="" />
           <img src="img/Photo-four.jpg" alt="" />
           <img src="img/Photo-five.jpg" alt="" />
           <img src="img/Photo-six.jpg" alt="" />
           <img src="img/Photo-seven.jpg" alt="" />
           <img src="img/Photo-eight.jpg" alt="" />
-          <img src="img/Photo-ten.jpg" alt="" />
+          <img  src="img/Photo-ten.jpg" alt="" />
           <img src="img/Photo-eleven.jpg" alt="" />
-          <img src="img/Photo-twelve.jpg" alt="" />
+          <img  src="img/Photo-twelve.jpg" alt="" />
           <img src="img/Photo-thirteen.jpg" alt="" />
-          <img src="img/Photo-fourteen.jpg" alt="" />
+          <img  src="img/Photo-fourteen.jpg" alt="" />
           <img src="img/Photo-fivthteen.jpg" alt="" />
           <img src="img/Photo-sixteen.jpg" alt="" />
           <img src="img/Photo-seventeen.jpg" alt="" />
-          <img src="img/Photo-eighteen.jpg" alt="" />
+          <img  src="img/Photo-eighteen.jpg" alt="" />
           <img src="img/Photo-nineteen.jpg" alt="" />
-          <img src="img/Photo-twentien.jpg" alt="" />
+          <img  src="img/Photo-twentien.jpg" alt="" />
           <img src="img/Photo-twentyone.jpg" alt="" />
         </div>
       </div>
@@ -218,8 +234,8 @@
 
     <section id="skills" class="skills">
       <div class="container">
-        <div class="skills__title">
-          <h2 class="wow fadeInRightBig slow">Мои <span>навыки</span></h2>
+        <div class="wow fadeInLeft slow skills__title">
+          <h2>Мои <span>навыки</span></h2>
         </div>
         <div class="skills__inner">
           <div
@@ -249,14 +265,16 @@
             <a href="tell: +79872581062">+7 987 258 1062</a>
           </div>
           <div class="contacts__inner-social">
-            <a href="mailto: avvakumova.aigul@mail.ru">avvakumova.aigul@mail.ru</a>
+            <a href="mailto: avvakumova.aigul@mail.ru"
+              >avvakumova.aigul@mail.ru</a
+            >
             <div class="social-icons">
-            <i class="fa fa-vk"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter"></i>
+              <a href=""><i class=" wow heartBeat delay-2s slow infinite fab fa-vk"></i></a>
+              <a href=""><i class=" wow heartBeat delay-2s slow infinite fab fa-instagram"></i></a>
+              <a href=""><i class=" wow heartBeat delay-2s slow infinite fab fa-twitter"></i></a>
+            </div>
           </div>
-          </div>
-          <div class="contacts__inner-right">
+          <div class=" contacts__inner-right">
             <span>All rights reserved © 2020</span>
           </div>
         </div>
@@ -264,7 +282,11 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

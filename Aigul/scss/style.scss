@@ -466,8 +466,8 @@ ul {
 #skills {
   padding-bottom: 100px;
   padding-top: 100px;
-  overflow-x: hidden;
   background-color: #ccc;
+  overflow-y: hidden;
 }
 
 .skills__title {
@@ -628,22 +628,27 @@ ul {
   background-color: #171717;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow-x: hidden;
 }
 
 .fa {
   display: block;
-  font-size: 50px;
+  font-size: 30px;
 }
 
-.fa-vk {
+.fa-phone {
+  margin-right: 20px;
+}
+
+.fab-vk {
 font-size: 70px;
 color: #fff;
 }
-.fa-instagram {
+.fab-instagram {
 font-size: 70px;
 color: #fff;
 }
-.fa-twitter {
+.fab-twitter {
   font-size: 70px;
   color: #fff;
 
@@ -661,6 +666,10 @@ color: #fff;
   & a {
     color: #fff;
     font-size: 40px;
+    transition: all .5s;
+    &:hover {
+      color: #a50c3e;
+    }
   }
 }
 
@@ -676,6 +685,10 @@ color: #fff;
     color: #fff;
     font-size: 40px;
     font-weight: 500;
+    transition: all .5s;
+    &:hover {
+      color: #a50c3e;
+    }
   }
 }
 .contacts__inner-right span {
