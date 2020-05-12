@@ -262,6 +262,10 @@
     color: #504f4f;
     font-size: 20px;
   }
+
+  .gallery__title h2 {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 1370px) {
@@ -621,19 +625,7 @@
 }
 
 @media (max-width: 768px) {
-  .header__slider .slick-dots button {
-    width: 10px;
-    height: 10px;
-  }
-
-  .header__slider .slick-dots .slick-active button {
-    width: 20px;
-    height: 20px;
-  }
-
-  .header__slider .slick-dots li {
-    margin: 0 30px;
-  }
+ 
   .header {
     &__photo img {
       width: 400px;

@@ -17,6 +17,7 @@ $(function () {
     arrows: false,
     infinite: false,
     fade: true,
+    cssEase: 'linear',
   });
 
 
@@ -43,12 +44,20 @@ $(function () {
       },
     ],
   });
-  $("#gallery, #skills, #contacts").ready(function () {
-    $("#gallery, #skills, #contacts").hide();
-    $(".menu__link").on("click", function () {
-      $("#gallery, #skills, #contacts").show();
-    });
+
+
+  $('#gallery, #skills, #contacts').ready(function(){
+    $('#gallery, #skills, #contacts').fadeOut()
+
   });
+
+  $('.menu__link').on('click', function(){
+    $('#gallery, #skills, #contacts').fadeIn()
+    $('.header__menu').addClass('close_menu')
+    $('.hamburger').show()
+    
+  });
+
 
 
 
