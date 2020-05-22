@@ -77,7 +77,7 @@
   animation-direction: reverse;
 }
 
-Resources ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 15px;
 }
 
@@ -911,7 +911,7 @@ i {
   background-color: #e94544;
   padding-bottom: 150px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .tarif_quote_one {

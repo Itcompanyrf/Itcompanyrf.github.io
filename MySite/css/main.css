@@ -358,6 +358,59 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.price__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.price__title h1 {
+  font-size: 56px;
+  font-family: "Gost";
+  color: #fff;
+  font-weight: 400;
+}
+
+.price-slider {
+  padding-bottom: 100px;
+}
+
+.price-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  font-size: 0;
+  width: 20px;
+  height: 30px;
+  background-color: none;
+}
+/* Стрелка влево */
+.price-slider.slick-arrow.slick-prev {
+  cursor: pointer;
+  outline: 0;
+  z-index: 20;
+  border: none;
+  left: 50%;
+  background: url(../img/arrow-right.png) 0 0 / 100% no-repeat;
+}
+
+.price-slider .slick-arrow.slick-next {
+  cursor: pointer;
+  outline: 0;
+  right: 50%;
+  border: none;
+  background: url(../img/arrow-right.png) 0 0 / 100% no-repeat;
+}
+
+.price__title span {
+  color: #a50c3e;
+  font-weight: 400;
+}
+
+.price-slider__item img {
+  width: 552px;
+}
+
+
 .portfolio {
   background-image: url(../img/polygons.png);
   background-position: center top;

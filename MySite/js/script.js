@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  $('.price-slider').slick({
+    arrows: true,
+    slidesToShow: 2,
+    
+    
+  });
     $(".hamburger").on("click", function () {
       $(".header__menu").addClass("active");
     });
@@ -26,4 +32,6 @@ $(document).ready(function () {
       $(".loader").fadeOut();
       $("#preloder").delay().fadeOut("slow");
     });
+
+
   });
